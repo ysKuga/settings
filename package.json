@@ -1,0 +1,11 @@
+{
+  "name": "settings",
+  "version": "1.0.0",
+  "scripts": {
+    "prepare": "sh ./scripts/prepare.sh"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lefthook": "^1.5.2"
+  }
+}
