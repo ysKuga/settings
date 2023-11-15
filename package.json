@@ -1,6 +1,8 @@
 {
   "name": "settings",
   "version": "1.0.0",
+  "private": true,
+  "workspaces": [],
   "scripts": {
     "prepare": "sh ./scripts/prepare.sh"
   },
