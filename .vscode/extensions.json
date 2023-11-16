@@ -4,6 +4,7 @@
     "davidanson.vscode-markdownlint",
     "streetsidesoftware.code-spell-checker",
     "thinker.sort-json",
-    "tombonnike.vscode-status-bar-format-toggle"
+    "tombonnike.vscode-status-bar-format-toggle",
+    "redhat.vscode-yaml"
   ]
 }
