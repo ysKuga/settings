@@ -1,5 +1,6 @@
 {
   "recommendations": [
+    "bibhasdn.unique-lines",
     "davidanson.vscode-markdownlint",
     "streetsidesoftware.code-spell-checker",
     "thinker.sort-json",
