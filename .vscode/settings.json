@@ -5,5 +5,8 @@
   // "editor.acceptSuggestionOnEnter": "off" // off にするとサジェストを Enter で選択できなくなる
   "files.associations": {
     "**/.vscode/*.json": "jsonc"
-  }
+  },
+  "formattingToggle.affects": [
+    "editor.formatOnSave"
+  ]
 }

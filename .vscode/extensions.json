@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "streetsidesoftware.code-spell-checker",
-    "thinker.sort-json"
+    "thinker.sort-json",
+    "tombonnike.vscode-status-bar-format-toggle"
   ]
 }
