@@ -1,0 +1,18 @@
+{
+  "[yaml]": {
+    "editor.autoIndent": "advanced",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.formatOnSave": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.sort-json": "explicit" // set to explicit true to sort json files on save. set to "never" or false to stop sorting on save
+  },
+  // "editor.acceptSuggestionOnEnter": "off" // off にするとサジェストを Enter で選択できなくなる
+  "files.associations": {
+    "**/.vscode/*.json": "jsonc"
+  },
+  "formattingToggle.affects": ["editor.formatOnSave"]
+}
