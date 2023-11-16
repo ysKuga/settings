@@ -6,8 +6,20 @@ dictionaryDefinitions:
   - name: project-words
     path: ".cspell/project-words.txt"
     addWords: true
+  # VSCode の拡張などで使用される言葉の辞書
+  - name: vscode-words
+    path: ".cspell/vscode-words.txt"
+    addWords: true
+  # package.json 用
+  - name: package-words
+    path: ".cspell/package-words.txt"
+    addWords: true
 dictionaries:
   - project-words
+  - vscode-words
+  - package-words
 ignorePaths:
   - "node_modules"
   - "/.cspell/project-words.txt"
+  - "/.cspell/vscode-words.txt"
+  - "/.cspell/package-words.txt"
