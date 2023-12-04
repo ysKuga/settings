@@ -3,6 +3,9 @@
 # Makefile 関連
 # https://gist.github.com/ysKuga/d1c699330cb275a3395dd239120013e3
 
+vscode/extensions-recommendations: ## .vscode/extensions/recommendations/ を extensions.json に反映する
+	bash ./scripts/vscode/extensions-recommendations.sh
+
 # help の記述
 # https://ktrysmt.github.io/blog/write-useful-help-command-by-shell/
 help: ## print this message
