@@ -2,9 +2,9 @@
   "recommendations": [
     "bibhasdn.unique-lines",
     "davidanson.vscode-markdownlint",
+    "redhat.vscode-yaml",
     "streetsidesoftware.code-spell-checker",
     "thinker.sort-json",
-    "tombonnike.vscode-status-bar-format-toggle",
-    "redhat.vscode-yaml"
+    "tombonnike.vscode-status-bar-format-toggle"
   ]
 }
