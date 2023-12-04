@@ -34,3 +34,16 @@ jq '.recommendations = '[$recommendations] <<<"$jsonExtensions" > "${VSCODE_DIR}
 
 # extensions.json の並べ替え
 npx --yes json-sort-cli "${VSCODE_DIR}/extensions.json" --arrays
+
+# recommendations からインストール済みのものを除外してインストール
+# インストール済みの拡張 (1 行目の `Extensions installed ...` を除外)
+# recommendations 配下
+for extension in `\
+  grep \
+  -vf \
+  <(code --list-extensions | tail -n +2 | tr '[A-Z]' '[a-z]' | sort) \
+  <(sh "${ROOT_DIR}/scripts/utils/list-filenames.sh" "${VSCODE_DIR}/extensions/recommendations" | tr '[A-Z]' '[a-z]' | sort)
+`
+do
+  code --install-extension "${extension}"
+done
