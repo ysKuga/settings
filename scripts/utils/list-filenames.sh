@@ -6,7 +6,7 @@
 TARGET=$1
 
 # 指定がディレクトリでない場合
-if [ ! -d "$TARGET" ];then
+if [ ! -d "$TARGET" ]; then
   echo "対象のディレクトリを指定してください"
   exit
 fi
