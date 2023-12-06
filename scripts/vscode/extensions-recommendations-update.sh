@@ -17,5 +17,5 @@ for extension in $(
   md_file="${VSCODE_DIR}/extensions/recommendations/${extension}.md"
   echo "# " >>$md_file
   echo "" >>$md_file
-  echo "<https://marketplace.visualstudio.com/items?itemName=bibhasdn.unique-lines>" >>$md_file
+  echo "<https://marketplace.visualstudio.com/items?itemName=${extension}>" >>$md_file
 done
