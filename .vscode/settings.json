@@ -29,7 +29,7 @@
     "editor.defaultFormatter": "redhat.vscode-yaml",
     "editor.formatOnSave": true
   },
-  // "editor.acceptSuggestionOnEnter": "off", // off にするとサジェストを Enter で選択できなくなる
+  "editor.acceptSuggestionOnEnter": "on", // off にするとサジェストを Enter で選択できなくなる
   "editor.codeActionsOnSave": {
     "source.fixAll.sort-json": "explicit" // set to explicit true to sort json files on save. set to "never" or false to stop sorting on save
   },
