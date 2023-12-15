@@ -33,8 +33,13 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.sort-json": "explicit" // set to explicit true to sort json files on save. set to "never" or false to stop sorting on save
   },
+  "editor.stickyScroll.enabled": true, // オブジェクトのキーなどが sticky 表示でスクロール時に上部に固定表示となる
   "files.associations": {
     "**/.vscode/*.json": "jsonc"
   },
-  "formattingToggle.affects": ["editor.formatOnSave"]
+  "files.eol": "\n",
+  "formattingToggle.affects": ["editor.formatOnSave"],
+  "todo-tree.general.tags": ["@todo", "FIXME", "TODO"],
+  "todo-tree.highlights.enabled": true,
+  "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|^|\\s+\\*( -)?\\s)\\s*($TAGS)|^\\s*- \\[ \\])"
 }
