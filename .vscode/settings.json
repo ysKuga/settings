@@ -1,18 +1,45 @@
 {
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[json][jsonc]": {
+    "editor.codeActionsOnSave": {
+      // sort-json は explicit などで有効にすると対象となる JSON をすべて並べ替えてしまう
+      "source.fixAll.sort-json": "never"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.markdownlint": "explicit"
+    },
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
   "[yaml]": {
     "editor.autoIndent": "advanced",
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+      "source.fixAll.eslint": "explicit"
     },
     "editor.defaultFormatter": "redhat.vscode-yaml",
     "editor.formatOnSave": true
   },
+  "editor.acceptSuggestionOnEnter": "on", // off にするとサジェストを Enter で選択できなくなる
   "editor.codeActionsOnSave": {
     "source.fixAll.sort-json": "explicit" // set to explicit true to sort json files on save. set to "never" or false to stop sorting on save
   },
-  // "editor.acceptSuggestionOnEnter": "off" // off にするとサジェストを Enter で選択できなくなる
+  "editor.stickyScroll.enabled": true, // オブジェクトのキーなどが sticky 表示でスクロール時に上部に固定表示となる
   "files.associations": {
     "**/.vscode/*.json": "jsonc"
   },
-  "formattingToggle.affects": ["editor.formatOnSave"]
+  "files.eol": "\n",
+  "formattingToggle.affects": ["editor.formatOnSave"],
+  "todo-tree.general.tags": ["@todo", "FIXME", "TODO"],
+  "todo-tree.highlights.enabled": true,
+  "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|^|\\s+\\*( -)?\\s)\\s*($TAGS)|^\\s*- \\[ \\])"
 }
