@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 
-# 実行ディレクトリとして想定するプロジェクトルート
-ROOT_DIR=$(pwd)
-# .vscode ディレクトリ
-VSCODE_DIR=.vscode
+source "$(dirname -- "${BASH_SOURCE[0]}")/00-init.sh"
 
 # recommendations にインストール済みの拡張を反映する
 # - recommendations 配下
