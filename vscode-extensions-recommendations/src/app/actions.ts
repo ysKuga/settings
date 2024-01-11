@@ -4,16 +4,7 @@ import fs from "fs";
 import { join } from "path";
 import matter from "gray-matter";
 import { exec } from "child_process";
-
-interface FrontMatter {
-  [prop: string]: string;
-}
-
-interface MarkdownDocument {
-  frontMatter: FrontMatter;
-  /** markdown の記述 */
-  content: string;
-}
+import { MarkdownDocument } from "./types";
 
 const ROOT_PATH = join(process.cwd(), "..");
 
