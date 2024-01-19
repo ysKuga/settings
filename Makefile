@@ -9,6 +9,9 @@ vscode/extensions-recommendations: ## .vscode/extensions/recommendations/ を ex
 vscode/extensions-recommendations-update: ## .vscode/extensions/recommendations/ にインストール済み拡張を反映する
 	bash ./scripts/vscode/extensions-recommendations-update.sh
 
+vscode/extensions-recommendations-search: ## .vscode/extensions/recommendations/ 配下の拡張を Next.js にて確認する
+	yarn --cwd vscode-extensions-recommendations dev
+
 # help の記述
 # https://ktrysmt.github.io/blog/write-useful-help-command-by-shell/
 help: ## print this message
