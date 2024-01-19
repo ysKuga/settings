@@ -17,7 +17,7 @@ const RECOMMENDATIONS_PATH = join(
  * `recommendations/` 配下の `.md` による拡張の記述を取得する
  * @url https://github.com/juristr/blog-series-nextjs-nx/blob/main/libs/markdown/src/lib/markdown.ts
  */
-export const getParsedFileContents = async (): Promise<MarkdownDocument[]> => {
+export const getMarkdownDocuments = async (): Promise<MarkdownDocument[]> => {
   return new Promise((resolve) => {
     exec(`find ${RECOMMENDATIONS_PATH} -type f`, (_error, stdout) => {
       console.time();
