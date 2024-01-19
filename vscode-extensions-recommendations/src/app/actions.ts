@@ -30,7 +30,8 @@ export const getMarkdownDocuments = async (): Promise<MarkdownDocument[]> => {
           const { data, content } = matter(fs.readFileSync(path));
           return {
             frontMatter: data,
-            content,
+            // 複数ファイルを統合して表示するため h1 -> h2 のように 1 レベルずつ下げていく
+            content: content.replace(/(?=^|\n)(#+)/mg, "#$1"),
           };
         });
       resolve(documents);
