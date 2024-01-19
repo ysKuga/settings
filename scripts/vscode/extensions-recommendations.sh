@@ -2,10 +2,7 @@
 
 # `<<<` 使用のため bash
 
-# 実行ディレクトリとして想定するプロジェクトルート
-ROOT_DIR=$(pwd)
-# .vscode ディレクトリ
-VSCODE_DIR=.vscode
+source "$(dirname -- "${BASH_SOURCE[0]}")/00-init.sh"
 
 JQ=$(command -v jq)
 
