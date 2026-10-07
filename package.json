@@ -7,7 +7,6 @@
     "prepare": "sh ./scripts/prepare.sh"
   },
   "devDependencies": {
-    "husky": "^8.0.3",
-    "lefthook": "^1.5.2"
+    "lefthook": "^2.1.17"
   }
 }
